@@ -1,0 +1,23 @@
+.homeImg{
+	border: 1px solid gray;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 150px;
+	height: 150px;
+}
+
+.createTagImg{
+	border: 1px solid gray;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	width: 150px;
+	height: 150px;
+}
+
+.activeTag{
+	background-color: #2D2249;
+	border-color: transparent;
+	color: #FFF;
+	padding: 2px;
+}
