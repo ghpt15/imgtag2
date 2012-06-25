@@ -18,10 +18,10 @@ return array
 			 *
 			 * Ports and sockets may be appended to the hostname.
 			 */
-			'hostname'   => 'localhost',//'imgtag.db.9208170.hostedresource.com',
+			'hostname'   => 'tunnel.pagodabox.com:33',//'localhost',//'imgtag.db.9208170.hostedresource.com',
 			'database'   => 'imgtag',
-			'username'   => 'root',//'imgtag',
-			'password'   => 'root123',//'adminIT123',
+			'username'   => 'ellie',//'root',//'imgtag',
+			'password'   => 'wQAk6IeW',//'root123',//'adminIT123',
 			'persistent' => FALSE,
 		),
 		'table_prefix' => '',
