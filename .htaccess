@@ -1,0 +1,23 @@
+# Turn on URL rewriting
+RewriteEngine On
+
+# Installation directory
+RewriteBase /
+
+# Allow these directories and files to be displayed directly:
+# - index.php (DO NOT FORGET THIS!)
+# - robots.txt
+# - favicon.ico
+# - Any file inside of the media/ directory
+#orig working RewriteRule ^(index\.php|robots\.txt|favicon\.ico|media|uploads) - [PT,L]
+
+#RewriteRule ^(index\.php|robots\.txt|favicon\.ico|static/images|static/js|static/css) - [PT,L]
+
+RewriteRule ^(index\.php|robots\.txt|favicon\.ico|assets/bootstrap|assets/js|static/css) - [PT,L]
+
+#RewriteCond $1 ^(index\.php|robots\.txt|favicon\.ico|static/images|static/js|static/css)
+
+# Rewrite all other URLs to index.php/URL
+RewriteRule .* index.php?/$0 [PT,L,QSA]
+
+#RewriteRule ^(.+)$ index.php?kohana_uri=$1 [L]
