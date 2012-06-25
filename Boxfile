@@ -1,0 +1,9 @@
+web1:
+  name: imgtag2
+  shared_writable_dirs:
+    - /application/logs
+    - /application/cache
+  php_extensions:
+    - mysql
+	- gd
+	- mysql
