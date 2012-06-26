@@ -6,4 +6,4 @@ web1:
     - curl
     - mcrypt
     - gd
-    - mysql
+    - pdo_mysql
