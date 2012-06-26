@@ -17,7 +17,7 @@
 <body data-spy="scroll" data-target=".subnav" data-offset="50">
 
 <?php
-	$lnkUploadImage = URL::base().'index.php/create/new';
+	$lnkUploadImage = URL::base().'create/new';
 ?>
 
 <div class="navbar navbar-fixed-top">
@@ -25,7 +25,7 @@
         <div class="container">
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
                 class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-            </a><a class="brand" href="<?php echo URL::base().'index.php/home';?>">ImgTag</a>
+            </a><a class="brand" href="<?php echo URL::base().'home';?>">ImgTag</a>
             <div class="nav-collapse">
                 <ul class="nav">
                     <li><a href="<?php echo $lnkUploadImage;?>">Upload Image</a></li>
@@ -76,7 +76,7 @@ $().ready(function(){
 			success: function(data){
 				var gallery = "";
 				$.each(data, function(key, value) { 
-					gallery += "<a href='<?php echo URL::base().'index.php/create/tags/?nm=';?>"+value.imageUrl+"'><img class='homeImg' src='<?php echo URL::base();?>/user_images/" + value.imageUrl + "' /></a>"
+					gallery += "<a href='<?php echo URL::base().'create/tags/?nm=';?>"+value.imageUrl+"'><img class='homeImg' src='<?php echo URL::base();?>/user_images/" + value.imageUrl + "' /></a>"
 				});
 				$('#galleryContainer').empty();
 				$('#galleryContainer').html(gallery);
