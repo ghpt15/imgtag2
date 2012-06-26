@@ -4,7 +4,8 @@ class Controller_Create extends Controller {
 
 	public function action_index()
 	{
-		echo 'this is create index';
+		//echo 'this is create index';
+		$this->response->body(View::factory('create/new'));
 	}
 
 	public function action_new()

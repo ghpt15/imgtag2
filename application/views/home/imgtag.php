@@ -17,7 +17,7 @@
 <body data-spy="scroll" data-target=".subnav" data-offset="50">
 
 <?php
-	$lnkUploadImage = URL::base().'create/new';
+	$lnkUploadImage = URL::base().'create/';
 ?>
 
 <div class="navbar navbar-fixed-top">
