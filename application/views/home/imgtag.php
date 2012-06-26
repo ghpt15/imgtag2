@@ -76,7 +76,7 @@ $().ready(function(){
 			success: function(data){
 				var gallery = "";
 				$.each(data, function(key, value) { 
-					gallery += "<a href='<?php echo URL::base().'create/tags/?nm=';?>"+value.imageUrl+"'><img class='homeImg' src='<?php echo URL::base();?>/user_images/" + value.imageUrl + "' /></a>"
+					gallery += "<a href='<?php echo URL::base().'Create/tags/?nm=';?>"+value.imageUrl+"'><img class='homeImg' src='<?php echo URL::base();?>user_images/" + value.imageUrl + "' /></a>"
 				});
 				$('#galleryContainer').empty();
 				$('#galleryContainer').html(gallery);
