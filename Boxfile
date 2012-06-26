@@ -1,7 +1,8 @@
 web1:
   shared_writable_dirs:
     - application/cache
-    - application/logs    
+    - application/logs
+    - user_images    
   php_extensions:
     - curl
     - mcrypt
