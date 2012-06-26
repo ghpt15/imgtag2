@@ -13,9 +13,9 @@ RewriteBase /
 
 #RewriteRule ^(index\.php|robots\.txt|favicon\.ico|static/images|static/js|static/css) - [PT,L]
 
-RewriteRule ^(index\.php|robots\.txt|favicon\.ico|assets/bootstrap|assets/js|static/css) - [PT,L]
+#working rule - 1012PM 0626 RewriteRule ^(index\.php|robots\.txt|favicon\.ico|assets/bootstrap|assets/js|static/css) - [PT,L]
 
-#RewriteCond $1 ^(index\.php|robots\.txt|favicon\.ico|static/images|static/js|static/css)
+RewriteCond $1 ^(index\.php|robots\.txt|favicon\.ico|assets/bootstrap|assets/js|static/css)
 
 # Rewrite all other URLs to index.php/URL
 #working RewriteRule .* index.php?/$0 [PT,L,QSA]
