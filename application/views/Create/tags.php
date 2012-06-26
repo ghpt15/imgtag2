@@ -17,7 +17,7 @@
 <body data-spy="scroll" data-target=".subnav" data-offset="50">
 
 <?php
-	$lnkUploadImage = URL::base().'index.php/create/new';
+	$lnkUploadImage = URL::base().'index.php/Create/new';
 ?>
 
 <div class="navbar navbar-fixed-top">
@@ -88,7 +88,7 @@ $().ready(function(){
 	$('#btnSaveTags').click(function () {
 		$('#popSuccess').hide();
 		var multipleValues = $(".tagit-hiddenSelect").val() || [];
-		$.post('<?php echo URL::site('create/savetags') ?>',
+		$.post('<?php echo URL::site('Create/savetags') ?>',
 			   {"tags": multipleValues.join(", "),
 				"imageFileNm" : $('#imgFileNm').val()}
 			   ,function(data) {
@@ -103,7 +103,7 @@ $().ready(function(){
 	function getExistingTagForImage()
 	{
 		$.ajax({
-			url: '<?php echo URL::site('create/getTagsForImage') ?>',
+			url: '<?php echo URL::site('Create/getTagsForImage') ?>',
 			cache: false,
 			data: {"imageFileNm": $.trim($('#imgFileNm').val())},
 			dataType: "json",
