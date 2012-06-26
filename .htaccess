@@ -13,7 +13,7 @@ RewriteBase /
 
 #RewriteRule ^(index\.php|robots\.txt|favicon\.ico|static/images|static/js|static/css) - [PT,L]
 
-RewriteRule ^(index\.php|robots\.txt|favicon\.ico|assets/bootstrap|assets/css|assets/js|static/css) - [PT,L]
+RewriteRule ^(index\.php|robots\.txt|favicon\.ico|assets/bootstrap|assets/css|user_images|assets/js|static/css) - [PT,L]
 
 #RewriteRule $1 ^(index\.php|robots\.txt|favicon\.ico|assets/bootstrap|assets/js|static/css) - [PT,L]
 
