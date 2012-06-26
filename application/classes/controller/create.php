@@ -2,6 +2,10 @@
 
 class Controller_Create extends Controller {
 
+	public function action_index()
+	{
+		echo 'this is create index';
+	}
 
 	public function action_new()
 	{
