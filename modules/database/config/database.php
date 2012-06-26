@@ -18,7 +18,7 @@ return array
 			 *
 			 * Ports and sockets may be appended to the hostname.
 			 */
-			'hostname'   => 'tunnel.pagodabox.com:33',//'localhost',//'imgtag.db.9208170.hostedresource.com',
+			'hostname'   => 'tunnel.pagodabox.com:3306',//'localhost',//'imgtag.db.9208170.hostedresource.com',
 			'database'   => 'imgtag',
 			'username'   => 'ellie',//'root',//'imgtag',
 			'password'   => 'wQAk6IeW',//'root123',//'adminIT123',
