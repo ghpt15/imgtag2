@@ -4,8 +4,8 @@ class Controller_Create extends Controller {
 
 	public function action_index()
 	{
-		//echo 'this is create index';
-		$this->response->body(View::factory('Create/new'));
+		echo 'this is create index';
+		//$this->response->body(View::factory('Create/new'));
 	}
 
 	public function action_new()
@@ -26,10 +26,10 @@ class Controller_Create extends Controller {
 		}
 		if($_POST)
 		{
-			$newUrl = "index.php/create/tags/?nm=".$_REQUEST['imgFileNm'].'&suc=1';
+			$newUrl = "index.php/Create/tags/?nm=".$_REQUEST['imgFileNm'].'&suc=1';
 			Request::current()->redirect($newUrl);
 		}else{
-			$this->response->body(View::factory('create/tags'));
+			$this->response->body(View::factory('Create/tags'));
 		}
 	}
 
@@ -70,7 +70,7 @@ WHERE i.imageUrl like '%".$imageFileNm."%'";
 	
 	public function action_upload()
     {
-        $view = View::factory('create/new');
+        $view = View::factory('Create/new');
         $error_message = NULL;
         $filename = NULL;
 		
@@ -96,7 +96,7 @@ WHERE i.imageUrl like '%".$imageFileNm."%'";
 			$query = DB::insert('images', array('imageUrl'))
 				->values(array($filename))->execute();
 				
-			$newUrl = "index.php/create/tags/?nm=".$filename;
+			$newUrl = "index.php/Create/tags/?nm=".$filename;
 			Request::current()->redirect($newUrl);
 		}else
 		{
