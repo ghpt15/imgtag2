@@ -18,6 +18,6 @@ RewriteRule ^(index\.php|robots\.txt|favicon\.ico|assets/bootstrap|assets/js|sta
 #RewriteCond $1 ^(index\.php|robots\.txt|favicon\.ico|static/images|static/js|static/css)
 
 # Rewrite all other URLs to index.php/URL
-#temp comment for phpmyadmin RewriteRule .* index.php?/$0 [PT,L,QSA]
+RewriteRule .* index.php?/$0 [PT,L,QSA]
 
 #RewriteRule ^(.+)$ index.php?kohana_uri=$1 [L]
