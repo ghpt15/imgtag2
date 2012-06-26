@@ -6,4 +6,6 @@ web1:
     - curl
     - mcrypt
     - gd
+    - mysqli
     - mysql
+    - mbstring
