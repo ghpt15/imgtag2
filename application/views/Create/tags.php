@@ -17,7 +17,7 @@
 <body data-spy="scroll" data-target=".subnav" data-offset="50">
 
 <?php
-	$lnkUploadImage = URL::base().'index.php/Create/new';
+	$lnkUploadImage = URL::base().'Create/new';
 ?>
 
 <div class="navbar navbar-fixed-top">
@@ -75,12 +75,7 @@
 			
 <script>
 $().ready(function(){
-	var availableTags = [
-			"ActionScript",
-			"AppleScript",
-			"Asp",
-			"Scheme"
-	];
+	var availableTags = [];
 	getExistingTagForImage();
 	
 	$('#tagsCtl').tagit({tagSource:availableTags, select:true, sortable:true});
