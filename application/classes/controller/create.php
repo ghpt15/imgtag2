@@ -5,14 +5,14 @@ class Controller_Create extends Controller {
 	public function action_index()
 	{
 		//echo 'this is create index';
-		$this->response->body(View::factory('create/new'));
+		$this->response->body(View::factory('Create/new'));
 	}
 
 	public function action_new()
 	{
 //echo URL::base().'<br>';
 		//$this->getTags();
-		$this->response->body(View::factory('create/new'));
+		$this->response->body(View::factory('Create/new'));
 	}
 
 	public function action_tags()
